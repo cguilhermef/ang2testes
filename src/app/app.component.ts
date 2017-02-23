@@ -29,8 +29,10 @@ export class AppComponent {
   heroes = HEROES;
 
   title = 'Tour of Heroes';
-  hero: Hero = {
-    id: 1,
-    name: 'Windstrorm'
-  };
+  selectedHero: Hero;
+
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
+
 }
