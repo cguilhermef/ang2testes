@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
-import * as _ from 'lodash';
+import {Hero} from './hero';
 
-export class Hero {
-  id: number;
-  name: string;
-}
+import * as _ from 'lodash';
 
 const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice' },
